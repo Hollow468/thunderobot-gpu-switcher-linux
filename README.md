@@ -74,5 +74,10 @@ lsmod | grep lsgpu
 ### 使用说明
 
 ```bash
-# 切换模式
-echo “1” | sudo tee 
+# 切换混合模式
+echo “1” | sudo tee /sys/kernel/lsgpu/mode
+# 切换独显模式
+echo “2” | sudo tee /sys/kernel/lsgpu/mode
+# 切换核显模式
+echo “3” | sudo tee /sys/kernel/lsgpu/mode
+
